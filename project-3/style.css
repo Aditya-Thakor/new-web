@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(
+      circle farthest-corner at 50% 100%,
+      rgba(0, 0, 0, 0.46) 1%,
+      rgba(0, 0, 0, 0.82) 91%
+    ),
+    url(./bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+header {
+  -border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.logo {
+  position: absolute;
+  left: 70px;
+  color: rgb(245, 245, 245);
+}
+.logo h2 {
+  font-family: ui-monospace;
+  font-weight: 100;
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  left: 281px;
+}
+.nav li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: #b6b6b6;
+  margin-left: 33px;
+  font-weight: 600;
+  font-size: 14px;
+
+  &:hover {
+    color: white;
+  }
+}
+
+main {
+  margin-top: 15px;
+  height: 592px;
+  -border: 1px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.txt {
+  position: relative;
+  color: white;
+  bottom: 20%;
+}
+.txt h3 {
+  position: relative;
+  color: hsla(0, 0%, 100%, 0.7);
+  font-size: 24px;
+  left: 57px;
+}
+.txt h1 {
+  font-size: 73px;
+  font-family: system-ui;
+}
+
+.btn button {
+  height: 37px;
+  width: 100px;
+  border: 2px solid #ff9041;
+  background: transparent;
+  color: white;
+
+  &:hover{
+    border: 2px dashed white;
+    color: #ff9041;
+  }
+}

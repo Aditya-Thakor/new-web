@@ -1,0 +1,79 @@
+/* Dark Theme Styles for the Website */
+:root {
+    --bs-primary: #1976D2;         /* Blue for buttons and primary actions */
+    --bs-secondary: #6c757d;       /* Gray for secondary elements */
+    --bs-success: #388E3C;         /* Green for success messages */
+    --bs-info: #0dcaf0;            /* Cyan for informational text */
+    --bs-warning: #FF5722;         /* Red-orange for warnings */
+    --bs-danger: #FF5722;          /* Error color */
+    --bs-light: #f8f9fa;           /* Light gray for general background */
+    --bs-dark: #121212;            /* Dark gray for primary background */
+    --bs-body-bg-rgb: 18, 18, 18;  /* RGB for dark background */
+    --bs-body-color-rgb: 224, 224, 224; /* Light gray text */
+    
+    --bs-gray-100: #1e1e1e;        /* Dark gray for secondary backgrounds */
+    --bs-gray-200: #343a40;        /* Darker gray for borders or subtle details */
+    --bs-gray-300: #495057;        /* Even darker gray */
+    --bs-gray-500: #adb5bd;        /* Light gray for accents */
+    --bs-gray-800: #212529;        /* Very dark gray for shadows or deep background */
+    --bs-white: #fff;              /* White text or background */
+    --bs-black: #000;              /* Black for very dark backgrounds */
+}
+
+/* General Body Styles for Dark Theme */
+body {
+    background-color: var(--bs-dark); /* Dark background */
+    color: var(--bs-body-color-rgb);  /* Light text for readability */
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--bs-white); /* White for headings */
+}
+
+/* Links and Text Highlights */
+a {
+    color: var(--bs-info);  /* Cyan links for better contrast */
+}
+
+/* Buttons */
+button {
+    background-color: var(--bs-primary); /* Blue button background */
+    color: var(--bs-white);              /* White text on buttons */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--bs-secondary); /* Lighten button on hover */
+}
+
+/* Card Backgrounds */
+.card {
+    background-color: var(--bs-gray-100); /* Dark card backgrounds */
+    color: var(--bs-body-color-rgb);      /* Light text on cards */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Error and Success Messages */
+.error-message {
+    color: var(--bs-danger); /* Red for error messages */
+}
+
+.success-message {
+    color: var(--bs-success); /* Green for success messages */
+}
+
+/* Borders and Shadows */
+.border-dark {
+    border: 1px solid var(--bs-gray-200); /* Light gray border */
+}
+
+.shadow-dark {
+    box-shadow: 0 0 10px var(--bs-gray-200); /* Light shadow effect */
+}

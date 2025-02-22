@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Institute</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+        }
+        .nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            background: linear-gradient(to right, #2980b9, #6dd5fa);
+            color: white;
+            text-align: center;
+        }
+        .about, .services, .courses {
+            padding: 50px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .service-grid, .course-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .service, .course {
+            padding: 20px;
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">TCP India</div>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Courses</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>100% Job Assistance</h1>
+            <p>One stop solution for your career</p>
+        </div>
+    </section>
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Welcome to TCP India, a transformative IT learning institute...</p>
+    </section>
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service">Training</div>
+            <div class="service">IT Innovation</div>
+            <div class="service">Degree Program</div>
+            <div class="service">Immigration</div>
+        </div>
+    </section>
+    <section class="courses">
+        <h2>Our Courses</h2>
+        <div class="course-grid">
+            <div class="course">Java Full-Stack</div>
+            <div class="course">Python Full-Stack</div>
+            <div class="course">.NET Full-Stack</div>
+            <div class="course">PHP Full-Stack</div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 TCP India. All rights reserved.</p>
+    </footer>
+</body>
+</html>
